@@ -49,7 +49,7 @@ class StreamCreate extends React.Component {
 					label="Enter Title"
 				/>
 				<Field
-					name="desciption"
+					name="description"
 					component={this.renderInput}
 					label="Enter Description"
 				/>
@@ -65,8 +65,8 @@ const validate = formValues => {
 	if (!formValues.title) {
 		errors.title = "You must enter a title";
 	}
-	if (!formValues.desciption) {
-		errors.desciption = "You must enter a desciption";
+	if (!formValues.description) {
+		errors.description = "You must enter a description";
 	}
 
 	return errors;
