@@ -2,15 +2,6 @@ import React from "react";
 import { Field, reduxForm } from "redux-form";
 
 class StreamForm extends React.Component {
-	//	renderInput(formProps) {
-	//		return (
-	//			<div className="field">
-	//				<label></label>
-	//				<input {...formProps.input} />
-	//			</div>
-	//		);
-	//	}
-
 	renderError({ error, touched }) {
 		if (touched && error) {
 			return (
